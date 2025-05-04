@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Chartered Accountant</title>
+  <style>
+    :root {
+      --primary-color: #00539C;
+      --accent-color: #FFD662;
+      --light-bg: #f4f6f8;
+      --dark-text: #333;
+      --white: #fff;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: var(--light-bg);
+      color: var(--dark-text);
+    }
+
+    .top-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: var(--white);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+
+    .contact-info {
+      text-align: right;
+      font-size: 0.95rem;
+      color: var(--primary-color);
+    }
+
+    .navbar {
+      background-color: var(--primary-color);
+      padding: 12px 40px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .navbar a {
+      color: var(--white);
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: var(--accent-color);
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h1 {
+      color: var(--primary-color);
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .team-member {
+      background: var(--white);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .team-member h3 {
+      color: var(--primary-color);
+      margin: 10px 0 5px;
+    }
+
+    footer {
+      background: var(--primary-color);
+      color: var(--white);
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 40px;
+    }
+
+    footer h3 {
+      margin-bottom: 10px;
+      color: var(--accent-color);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Top Header -->
+<header class="top-header">
+    <div class="logo">
+        <img src="assets/main-logo.png" style="height:60px;">
+    </div>
+    <div class="contact-info">
+        📞 +91-9876543210<br>
+        ✉️ info@example.com
+    </div>
+</header>
+
+<!-- Navigation Menu -->
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- About Section -->
+<section class="section">
+  <h1>About Our Firm</h1>
+  <p>
+    We are a leading Chartered Accountancy firm offering expert financial, auditing, taxation, and advisory services for individuals, startups, and businesses across India. With over a decade of experience, we aim to provide simplified, accurate, and affordable solutions.
+  </p>
+  <p>
+    Our goal is to be a one-stop partner for your financial growth, ensuring compliance, transparency, and strategic guidance every step of the way.
+  </p>
+  <p>
+    Whether you're filing income tax, managing GST, or launching your own company, our skilled team is here to assist you with professional excellence and personal attention.
+  </p>
+
+  <h2>Meet Our Team</h2>
+  <div class="team">
+    <div class="team-member">
+      <h3>CA Ramesh Iyer</h3>
+      <p>Founder & Lead Auditor</p>
+    </div>
+    <div class="team-member">
+      <h3>CA Priya Menon</h3>
+      <p>Taxation & Compliance Expert</p>
+    </div>
+    <div class="team-member">
+      <h3>Rajiv Kumar</h3>
+      <p>Business Consultant</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <h3>Want to work with us?</h3>
+  <p>Get in touch for personalized financial and business solutions.</p>
+</footer>
+
+</body>
+</html>

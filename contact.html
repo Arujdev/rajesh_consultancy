@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - Chartered Accountant</title>
+  <style>
+    :root {
+      --primary-color: #00539C;
+      --accent-color: #FFD662;
+      --light-bg: #f4f6f8;
+      --dark-text: #333;
+      --white: #fff;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: var(--light-bg);
+      color: var(--dark-text);
+    }
+
+    .top-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: var(--white);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+
+    .contact-info {
+      text-align: right;
+      font-size: 0.95rem;
+      color: var(--primary-color);
+    }
+
+    .navbar {
+      background-color: var(--primary-color);
+      padding: 12px 40px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .navbar a {
+      color: var(--white);
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: var(--accent-color);
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section h1 {
+      color: var(--primary-color);
+      margin-bottom: 20px;
+    }
+
+    .form-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    form {
+      flex: 1;
+      min-width: 280px;
+      background: var(--white);
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    form .form-group {
+      padding: 0 10px; /* consistent spacing */
+      box-sizing: border-box;
+    }
+
+    form label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 14px 10px; /* bigger size */
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1.05rem;
+      box-sizing: border-box;
+    }
+
+    form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    form button {
+      margin-top: 20px;
+      background-color: var(--primary-color);
+      color: var(--white);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #003f7d;
+    }
+
+    .contact-details {
+      flex: 1;
+      min-width: 280px;
+      background: var(--white);
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .contact-details h3 {
+      color: var(--primary-color);
+      margin-bottom: 15px;
+    }
+
+    .contact-details p {
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
+    .contact-details a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    footer {
+      background: var(--primary-color);
+      color: var(--white);
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 40px;
+    }
+
+    footer h3 {
+      margin-bottom: 10px;
+      color: var(--accent-color);
+    }
+
+    @media (max-width: 700px) {
+      .top-header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .form-wrapper {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Top Header -->
+<header class="top-header">
+    <div class="logo">
+        <img src="assets/main-logo.png" style="height:60px;">
+    </div>
+    <div class="contact-info">
+    📞 +91-9876543210<br>
+    ✉️ info@example.com
+  </div>
+</header>
+
+<!-- Navigation Menu -->
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Contact Section -->
+<section class="section">
+  <h1>Contact Us</h1>
+  <p>If you have any questions or would like to schedule a consultation, please fill out the form below or reach out directly.</p>
+
+  <div class="form-wrapper">
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+    
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+    
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" />
+      </div>
+    
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+    
+      <div class="form-group">
+        <button type="submit">Send Message</button>
+      </div>
+    </form>
+    
+
+    <div class="contact-details">
+      <h3>Our Office</h3>
+      <p>
+        123 Finance Street,<br>
+        Chennai, Tamil Nadu 600001<br>
+        India
+      </p>
+      <p><strong>Phone:</strong> +91-9876543210</p>
+      <p><strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a></p>
+      <p><strong>Working Hours:</strong><br>
+        Mon - Sat: 9:00 AM – 6:00 PM<br>
+        Sunday: Closed</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <h3>Thank You for Visiting</h3>
+  <p>We're here to make your finances easy. Get in touch today!</p>
+</footer>
+
+</body>
+</html>
