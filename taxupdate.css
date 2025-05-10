@@ -1,0 +1,22 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #333;
+    padding: 40px;
+}
+h1 {
+    color: #00539C;
+    margin-bottom: 30px;
+}
+.update {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.update h3 {
+    margin-top: 0;
+    color: #0074D9;
+}

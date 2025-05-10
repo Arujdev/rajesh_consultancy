@@ -1,0 +1,48 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 12px 16px;
+    /* display: inline-block; */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    width: 200px; /* set fixed width if needed */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    margin-top: 10px;
+    padding: 0;  /* 🔴 important: remove internal padding */
+}
+  
+.dropdown-content a {
+    display: block;
+    padding: 12px 16px; /* keep padding for spacing */
+    color: var(--primary-color);
+    text-decoration: none;
+    background-color: var(--white);
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--accent-color); /* full-width yellow */
+    color: var(--dark-text);
+    margin: 0;
+} 
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    color: var(--accent-color);
+  }
