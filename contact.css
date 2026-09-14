@@ -185,3 +185,26 @@ footer h3 {
         margin: 8px;
     }
 }
+
+.form-status {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    min-height: 1.2em;
+}
+
+.form-status.success {
+    color: #1b7f4d;
+    font-weight: 500;
+}
+
+.form-status.error {
+    color: #b3261e;
+    font-weight: 500;
+}
+
+form button:disabled {
+    background-color: #8aa6bf;
+    cursor: not-allowed;
+}
